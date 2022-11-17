@@ -1,0 +1,40 @@
+@import './base/base';
+@import './base/reset';
+// style for card Details
+
+.cardDetails {
+  background-image: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+
+    .backCardDetails {
+  background-image: url("../images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 0;
+  height: 150px;
+  width: 250px;
+  position: absolute;
+  right: 10px;
+    }
+
+    .frontCardDetails {
+      background-image: url("../images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 0;
+  height: 180px;
+  width: 250px;
+  position: absolute;
+  top: 107.5px;
+  left: 50px;
+    }
+}
