@@ -2,6 +2,7 @@
 :root {
   /*Fonts */
   --font-spaceGrotesk: 'Space Grotesk', sans-serif;
+  --font-weight: 500;
   /*Colors*/ }
 
 * {
@@ -24,27 +25,68 @@ button {
   height: 200px;
   padding-top: 30px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  padding-left: 20px; }
   .cardDetails .backCardDetails {
     background-image: url("../images/bg-card-back.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: auto;
-    margin-right: 20px;
     margin-top: 0;
     height: 150px;
     width: 250px;
     position: absolute;
-    right: 10px; }
+    left: 70px; }
   .cardDetails .frontCardDetails {
     background-image: url("../images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: auto;
-    margin-right: 20px;
     margin-top: 0;
-    height: 180px;
+    height: 150px;
     width: 250px;
     position: absolute;
     top: 107.5px;
-    left: 50px; }
+    left: 18px; }
+
+.formDetails {
+  margin-top: 100px; }
+  .formDetails form {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    .formDetails form label {
+      margin-left: 15px;
+      letter-spacing: 1px; }
+    .formDetails form .labelYear {
+      margin-left: 3px; }
+    .formDetails form .cvcLabel {
+      margin-left: 12px; }
+    .formDetails form input {
+      width: 300px;
+      margin: 5px 15px;
+      height: 35px;
+      border: grey solid 1px;
+      border-radius: 5px; }
+    .formDetails form .inputsCard {
+      display: flex;
+      row-gap: 3px; }
+      .formDetails form .inputsCard #expireMonth {
+        width: 60px;
+        margin-right: 3px; }
+      .formDetails form .inputsCard #expireYear {
+        width: 60px;
+        margin-left: 2px;
+        margin-right: 3px; }
+      .formDetails form .inputsCard #cvc {
+        width: 170px;
+        margin-left: 2px; }
+    .formDetails form button {
+      background-color: black;
+      color: white;
+      width: 300px;
+      margin-top: 20px;
+      margin-left: 15px;
+      padding: 10px;
+      border-radius: 5px; }

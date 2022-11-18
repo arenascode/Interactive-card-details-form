@@ -1,7 +1,16 @@
 @import './base/base';
 @import './base/reset';
-// style for card Details
 
+// font variables
+$font-size-tittle-input: 10px;
+$font-weight: 600;
+$letter-spacing-input: 1px;
+//color variables
+
+// style for card Details
+// .container {
+//   width: 375px;
+// }
 .cardDetails {
   background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
@@ -10,31 +19,90 @@
   padding-top: 30px;
   width: 100%;
   position: relative;
+  padding-left: 20px;
 
     .backCardDetails {
   background-image: url("../images/bg-card-back.png");
   background-repeat: no-repeat;
   background-size:contain;
-  margin-left: auto;
-  margin-right: 20px;
   margin-top: 0;
   height: 150px;
   width: 250px;
   position: absolute;
-  right: 10px;
+  // right: 55px;
+  left: 70px
     }
 
     .frontCardDetails {
       background-image: url("../images/bg-card-front.png");
   background-repeat: no-repeat;
   background-size:contain;
-  margin-left: auto;
-  margin-right: 20px;
   margin-top: 0;
-  height: 180px;
+  height: 150px;
   width: 250px;
   position: absolute;
   top: 107.5px;
-  left: 50px;
+  left: 18px;
     }
+}
+
+// Style for Form 
+
+.formDetails {
+  margin-top: 100px;
+  form {
+    font-size: $font-size-tittle-input;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing-input;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    label {
+      margin-left: 15px;
+      letter-spacing: 1px;
+    }
+    .labelYear {
+      margin-left: 3px;
+    }
+    .cvcLabel {
+      margin-left: 12px;
+    }
+    input {
+      width: 300px;
+      margin: 5px 15px;
+      height: 35px;
+      border: grey solid 1px;
+      border-radius: 5px;
+      
+    }
+    .inputsCard {
+      display: flex;
+      row-gap: 3px;
+      
+      #expireMonth {
+        width: 60px;
+        margin-right: 3px;
+      }
+      #expireYear {
+        width: 60px;
+        margin-left: 2px;
+        margin-right: 3px;
+
+      }
+      #cvc {
+        width: 170px;
+        margin-left: 2px;
+      }
+    } 
+    button {
+      background-color: black;
+      color: white;
+      width: 300px;
+      margin-top: 20px;
+      margin-left: 15px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  
 }
