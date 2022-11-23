@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <main class="container">
-  <div class="cardDetails">
-    <div class="backCardDetails">
-    <div id="cvcContent">
-      000
-    </div>
-    </div>
-    <div class="frontCardDetails">
-      <img src="./images/card-logo.svg" width="52" alt="">
-      <div id="frontCardNumber" >
-        0000 0000 0000 0000
-      </div>
-      <div id="frontCardName">
-        JANE APPLESEED
-      </div>
-      <div id="expireDate">
-        00/00
-      </div>
-    </div>
-  </div>
-  <div class="formDetails">
-    <form action="">
-      <label for="buyerName" >CARDHOLDER NAME
-      </label>
-      <input type="text" name="name" id="buyerName" placeholder="   e.g.Jane Applesseed">
-      <label for="cardNumber" >CARD NUMBER
-      </label>
-      <input type="" name="cardNumber" id="cardNumber" placeholder="   e.g. 1234 5678 123 0000">
-      <div class="expCardInfo">
-        <div class="labelsInputs">
-          <label for="expireMonth" >EXP. DATE</label>
-          <label for="expireYear" class="labelYear">(MM/YY)</label>
-          <label for="cvc" class="cvcLabel">CVC</label>
+    <div class="cardDetails">
+      <div class="backCardDetails">
+        <div id="cvcContent">
+          000
         </div>
-        <div class="inputsCard">
-        <input type="number" id="expireMonth" placeholder="  MM">
-        <input type="number" id="expireYear" placeholder="  YY">
-        <input type="number" id="cvcInput" placeholder="  e.g. 123">
       </div>
+      <div class="frontCardDetails">
+        <img src="./images/card-logo.svg" width="52" alt="">
+        <div id="frontCardNumber">
+          0000 0000 0000 0000
+        </div>
+        <div id="frontCardName">
+          JANE APPLESEED
+        </div>
+        <div id="expireDate">
+          <div id="expireMonth">
+            00
+          </div>/
+          <div id="expireYear">
+            00
+          </div>
+        </div>
       </div>
-      <button type="submit">Confirm</button>
-    </form>
-</div>
-</main>
+    </div>
+    <div class="formDetails">
+      <form action="" id="formCard">
+        <label for="buyerName">CARDHOLDER NAME</label>
+        <input type="text" name="name" id="buyerName" placeholder="   e.g.Jane Appleseed">
+        <span class="invalid invCardAndNumber"></span>
+        <label for="cardNumber">CARD NUMBER</label>
+        <input type="tel" name="cardNumber" id="cardNumber" placeholder="   e.g. 1234 5678 123 0000" maxlength="19" minlength="19">
+        <span class="invalid invCardAndNumber"></span>
+        <div class="expCardInfo">
+          <div class="labelsInputs">
+            <label for="expireMonth">EXP. DATE</label>
+            <label for="expireYear" class="labelYear">(MM/YY)</label>
+            <label for="cvc" class="cvcLabel">CVC</label>
+          </div>
+          <div class="inputsCard">
+            <input type="text" id="expireMonthForm" placeholder="  MM" maxlength="2">
+            <span class="invalid"></span>
+            <input type="text" id="expireYearForm" placeholder="  YY" maxlength="2">
+            <span class="invalid"></span>
+            <input type="text" id="cvcInput" placeholder="  e.g. 123" maxlength="3">
+            <span class="invalid"></span>
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+    </div>
+  </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Migue Arenas</a>.
   </div> -->
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js" type="module"></script>
 </body>
+
 </html>

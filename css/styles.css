@@ -75,7 +75,8 @@ body {
       font-size: 8px;
       color: white;
       letter-spacing: 1px;
-      font-weight: 300; }
+      font-weight: 300;
+      display: flex; }
 
 .formDetails {
   margin-top: 100px; }
@@ -99,17 +100,21 @@ body {
       height: 35px;
       border: grey solid 1px;
       border-radius: 5px; }
+    .formDetails form .invCardAndNumber {
+      margin-left: 18px;
+      margin-bottom: 5px;
+      color: #ff5252; }
     .formDetails form .inputsCard {
       display: flex;
       row-gap: 3px; }
-      .formDetails form .inputsCard #expireMonth {
+      .formDetails form .inputsCard #expireMonthForm {
         width: 60px;
         margin-right: 3px; }
-      .formDetails form .inputsCard #expireYear {
+      .formDetails form .inputsCard #expireYearForm {
         width: 60px;
         margin-left: 2px;
         margin-right: 3px; }
-      .formDetails form .inputsCard #cvc {
+      .formDetails form .inputsCard #cvcInput {
         width: 170px;
         margin-left: 2px; }
     .formDetails form button {
