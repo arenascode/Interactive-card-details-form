@@ -93,13 +93,14 @@ body {
     .formDetails form .labelYear {
       margin-left: 3px; }
     .formDetails form .cvcLabel {
-      margin-left: 12px; }
+      margin-left: 18px; }
     .formDetails form input {
       width: 300px;
       margin: 5px 15px;
       height: 35px;
       border: grey solid 1px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding-left: 10px; }
     .formDetails form .invCardAndNumber {
       margin-left: 18px;
       margin-bottom: 5px;
@@ -107,6 +108,15 @@ body {
     .formDetails form .inputsCard {
       display: flex;
       row-gap: 3px; }
+      .formDetails form .inputsCard .expdateAndInvalid {
+        display: grid;
+        width: 60px;
+        margin-right: 18px; }
+        .formDetails form .inputsCard .expdateAndInvalid .invalidDate {
+          margin-left: 18px;
+          overflow-x: visible;
+          width: max-content;
+          color: #ff5252; }
       .formDetails form .inputsCard #expireMonthForm {
         width: 60px;
         margin-right: 3px; }
@@ -114,9 +124,20 @@ body {
         width: 60px;
         margin-left: 2px;
         margin-right: 3px; }
-      .formDetails form .inputsCard #cvcInput {
-        width: 170px;
-        margin-left: 2px; }
+      .formDetails form .inputsCard .cvcAndInvalid {
+        display: grid;
+        width: 60px;
+        margin-right: 18px; }
+        .formDetails form .inputsCard .cvcAndInvalid #cvcInput {
+          width: 170px;
+          margin-left: 2px; }
+        .formDetails form .inputsCard .cvcAndInvalid .invalidCvc {
+          overflow-x: visible;
+          width: max-content;
+          color: #ff5252;
+          margin-left: 5px; }
+    .formDetails form .invalidDate_Cvc {
+      float: left; }
     .formDetails form button {
       background-color: black;
       color: white;

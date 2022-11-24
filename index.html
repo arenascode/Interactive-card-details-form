@@ -38,10 +38,10 @@
     <div class="formDetails">
       <form action="" id="formCard">
         <label for="buyerName">CARDHOLDER NAME</label>
-        <input type="text" name="name" id="buyerName" placeholder="   e.g.Jane Appleseed">
+        <input type="text" name="name" id="buyerName" placeholder="e.g.Jane Appleseed">
         <span class="invalid invCardAndNumber"></span>
         <label for="cardNumber">CARD NUMBER</label>
-        <input type="tel" name="cardNumber" id="cardNumber" placeholder="   e.g. 1234 5678 123 0000" maxlength="19" minlength="19">
+        <input type="tel" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 123 0000" maxlength="19">
         <span class="invalid invCardAndNumber"></span>
         <div class="expCardInfo">
           <div class="labelsInputs">
@@ -50,12 +50,14 @@
             <label for="cvc" class="cvcLabel">CVC</label>
           </div>
           <div class="inputsCard">
-            <input type="text" id="expireMonthForm" placeholder="  MM" maxlength="2">
-            <span class="invalid"></span>
-            <input type="text" id="expireYearForm" placeholder="  YY" maxlength="2">
-            <span class="invalid"></span>
-            <input type="text" id="cvcInput" placeholder="  e.g. 123" maxlength="3">
-            <span class="invalid"></span>
+            <div class="expdateAndInvalid"><input type="text" id="expireMonthForm" placeholder="MM" maxlength="2">
+            <span class="invalid invalidDate"></span>
+            </div>
+            <input type="text" id="expireYearForm" placeholder="YY" maxlength="2">
+            <div class="cvcAndInvalid">
+              <input type="text" id="cvcInput" placeholder="e.g. 123" maxlength="3">
+              <span class="invalid invalidCvc"></span>
+            </div>
           </div>
         </div>
         <button type="submit">Confirm</button>
