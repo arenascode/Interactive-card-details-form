@@ -1,9 +1,7 @@
 // Form Inputs
 const inputs = document.querySelectorAll("input");
 const errorInputs = document.querySelectorAll(".invalid");
-console.log(errorInputs);
 let letters = /^[A-Za-z]+$/;
-console.log(inputs[1].value.match(letters));
 const form = document.getElementById("formCard");
 
 
@@ -56,9 +54,24 @@ function validateForm() {
     if (inputs[4].value !== "" && inputs[4].value.length < 3) {
       errorInputs[3].innerText = `Wrong Format, must be 3 numbers`;
     }
+    if (errorInputs[0].innerText === '' && errorInputs[1].innerText === '' && errorInputs[2].innerText === '' && errorInputs[3].innerText === '') {
+      showFinalMessage()
       console.log("The form was submited");
+    }
   });
 }
+
+function showFinalMessage() {
+  document.getElementById("formContainer").innerHTML = `
+  <div class="finalMessage">
+  <img src="./images/icon-complete.svg" alt="">
+  <h1>THANK YOU!</h1>
+  <h3>We've added your card details</h3>
+  <button onClick="window.location.reload()"> Continue </button>
+  </div>
+`;
+}
+
 
 validateForm();
 export { validateForm };
