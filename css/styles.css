@@ -186,3 +186,192 @@ body {
     color: var(--secondary-lightGrayish-Violent);
     border-radius: 6px;
     margin-top: 1em; }
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    row-gap: 20px; }
+    .container .cardDetails {
+      background-image: url("../images/bg-main-mobile.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      padding-top: 30px;
+      width: 45%;
+      position: relative;
+      padding-left: 20px; }
+      .container .cardDetails .backCardDetails {
+        background-image: url("../images/bg-card-back.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0;
+        height: 370px;
+        width: 420px;
+        position: absolute;
+        top: 480px;
+        left: 300px; }
+        .container .cardDetails .backCardDetails #cvcContent {
+          color: white;
+          position: absolute;
+          left: 330px;
+          top: 102px;
+          font-size: 18px;
+          font-weight: 300;
+          letter-spacing: 1px; }
+      .container .cardDetails .frontCardDetails {
+        background-image: url("../images/bg-card-front.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0;
+        height: 370px;
+        width: 420px;
+        position: absolute;
+        top: 200px;
+        left: 200px; }
+        .container .cardDetails .frontCardDetails img {
+          margin: 10px 18px 0;
+          width: max-content; }
+        .container .cardDetails .frontCardDetails #frontCardNumber {
+          color: white;
+          font-size: 26px;
+          letter-spacing: 4px;
+          position: absolute;
+          top: 130px;
+          left: 23px; }
+        .container .cardDetails .frontCardDetails #frontCardName {
+          position: absolute;
+          top: 190px;
+          left: 25px;
+          font-size: 18px;
+          font-weight: 300;
+          color: white;
+          letter-spacing: 1.5px; }
+        .container .cardDetails .frontCardDetails #expireDate {
+          position: absolute;
+          left: 320px;
+          bottom: 160px;
+          font-size: 19px;
+          color: white;
+          letter-spacing: 1px;
+          font-weight: 300;
+          display: flex; }
+    .container .formDetails {
+      width: 55%;
+      margin: auto 0 auto 400px; }
+      .container .formDetails form {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px; }
+        .container .formDetails form label {
+          margin-left: 15px;
+          letter-spacing: 1px;
+          margin-top: 10px; }
+        .container .formDetails form .labelYear {
+          margin-left: 3px;
+          margin-top: 10px; }
+        .container .formDetails form .cvcLabel {
+          margin-left: 24px;
+          margin-top: 10px; }
+        .container .formDetails form input {
+          width: 400px;
+          margin: 5px 15px;
+          height: 50px;
+          border: rgba(128, 128, 128, 0.52) solid 1px;
+          border-radius: 5px;
+          padding-left: 10px;
+          font-size: 18px; }
+        .container .formDetails form input::placeholder {
+          color: rgba(128, 128, 128, 0.738);
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: 'Space Grotesk', sans-serif;
+          margin-left: 5px; }
+        .container .formDetails form input:focus {
+          outline: #600594 solid 1px; }
+        .container .formDetails form .invCardAndNumber {
+          margin-left: 18px;
+          margin-bottom: 5px;
+          color: #ff5252; }
+        .container .formDetails form .labelsInputs {
+          margin-top: 10px; }
+        .container .formDetails form .inputsCard {
+          display: flex;
+          row-gap: 5px; }
+          .container .formDetails form .inputsCard .expdateAndInvalid {
+            display: grid;
+            width: 60px;
+            margin-right: 18px; }
+            .container .formDetails form .inputsCard .expdateAndInvalid .invalidDate {
+              margin-left: 18px;
+              overflow-x: visible;
+              width: max-content;
+              color: #ff5252; }
+          .container .formDetails form .inputsCard #expireMonthForm {
+            width: 90px;
+            margin-right: 10px; }
+          .container .formDetails form .inputsCard #expireYearForm {
+            width: 90px;
+            margin-left: 40px;
+            margin-right: 3px; }
+          .container .formDetails form .inputsCard .cvcAndInvalid {
+            display: grid;
+            width: 60px;
+            margin-right: 18px; }
+            .container .formDetails form .inputsCard .cvcAndInvalid #cvcInput {
+              width: 190px;
+              margin-left: 15px; }
+            .container .formDetails form .inputsCard .cvcAndInvalid .invalidCvc {
+              overflow-x: visible;
+              width: max-content;
+              color: #ff5252;
+              margin-left: 16px; }
+        .container .formDetails form .invalidDate_Cvc {
+          float: left; }
+        .container .formDetails form button {
+          background-color: var(--secondary-veryDark-Violent);
+          color: white;
+          width: 400px;
+          height: 60px;
+          margin-top: 25px;
+          margin-left: 15px;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 1px; }
+  .finalMessage {
+    width: 100%;
+    text-align: center;
+    margin-left: -80px; }
+    .finalMessage img {
+      max-width: 100%;
+      object-fit: cover; }
+    .finalMessage h1 {
+      color: var(--secondary-veryDark-Violent);
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: 26px;
+      margin-bottom: 15px;
+      margin-top: 20px; }
+    .finalMessage h3 {
+      color: var(--secondary-drakGrayish-Violent);
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: 1px;
+      margin-bottom: 20px; }
+    .finalMessage button {
+      background-color: var(--secondary-veryDark-Violent);
+      color: white;
+      width: 420px;
+      height: 60px;
+      margin-top: 50px;
+      margin-left: 75px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px; } }

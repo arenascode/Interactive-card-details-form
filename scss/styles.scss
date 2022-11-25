@@ -237,3 +237,245 @@ $letter-spacing-input: 1px;
     margin-top: 1em;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    row-gap: 20px;
+
+    .cardDetails {
+  background-image: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 30px;
+  width: 45%;
+  position: relative;
+  padding-left: 20px;
+
+  .backCardDetails {
+    background-image: url("../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0;
+    height: 370px;
+    width: 420px;
+    position: absolute;
+    top: 480px;
+    left: 300px;
+
+    #cvcContent {
+      color: white;
+      position: absolute;
+      left: 330px;
+      top: 102px;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+
+  .frontCardDetails {
+    background-image: url("../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0;
+    height: 370px;
+    width: 420px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+      
+      img {
+        margin: 10px 18px 0;
+        width: max-content;
+      }
+      #frontCardNumber {
+        color: white;
+        font-size: 26px;
+        letter-spacing: 4px;
+        position: absolute;
+        top: 130px;
+        left: 23px;
+      }
+      #frontCardName {
+        position: absolute;
+        top: 190px;
+        left: 25px;
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+        letter-spacing: 1.5px;
+      }
+      #expireDate {
+        position:absolute;
+        left: 320px;
+        bottom: 160px;
+        font-size: 19px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 300;
+        display: flex;
+      }
+  }
+}
+.formDetails {
+  width: 55%;
+  margin: auto 0 auto 400px;
+  form {
+   font-size: 18px;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing-input;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    label {
+      margin-left: 15px;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    .labelYear {
+      margin-left: 3px;
+      margin-top: 10px;
+    }
+
+    .cvcLabel {
+      margin-left: 24px;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 400px;
+      margin: 5px 15px;
+      height: 50px;
+      border: rgba(128, 128, 128, 0.52) solid 1px;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 18px;  
+    }
+    input::placeholder {
+        color: rgba(128, 128, 128, 0.738);
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-left: 5px;
+      }
+    input:focus {
+      outline:hsl(278, 94%, 30%) solid 1px;
+    }
+    .invCardAndNumber {
+      margin-left: 18px;
+      margin-bottom: 5px;
+      color: #ff5252;
+    }
+    .labelsInputs {
+      margin-top: 10px;
+    }
+    .inputsCard {
+      display: flex;
+      row-gap: 5px;
+
+      .expdateAndInvalid {
+        display: grid;
+        width: 60px;
+        margin-right: 18px;
+
+        .invalidDate {
+          margin-left: 18px;
+          overflow-x: visible;
+          width: max-content;
+          color: #ff5252
+        }
+      }
+
+      #expireMonthForm {
+        width: 90px;
+        margin-right: 10px;
+      }
+
+      #expireYearForm {
+        width: 90px;
+        margin-left: 40px;
+        margin-right: 3px;
+      }
+
+      .cvcAndInvalid {
+        display: grid;
+        width: 60px;
+        margin-right: 18px;
+
+        #cvcInput {
+        width: 190px;
+        margin-left: 15px;}
+
+        .invalidCvc {
+          overflow-x: visible;
+          width: max-content;
+          color: #ff5252;
+          margin-left: 16px;
+        }
+      }
+    }
+    .invalidDate_Cvc {
+      float: left;
+    }
+    button {
+      background-color: var(--secondary-veryDark-Violent);
+      color: white;
+      width: 400px;
+      height: 60px;
+      margin-top: 25px;
+      margin-left: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    
+  }
+}
+  }
+  .finalMessage {
+  width: 100%;
+  text-align: center;
+  margin-left: -80px;
+
+  img {  
+  max-width: 100%;
+  object-fit: cover;
+  
+}
+  h1 {
+    color: var(--secondary-veryDark-Violent);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+} 
+  h3 {
+    color:var(--secondary-drakGrayish-Violent);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  button {
+   background-color: var(--secondary-veryDark-Violent);
+      color: white;
+      width: 420px;
+      height: 60px;
+      margin-top: 50px;
+      margin-left: 75px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+  }
+}
+}
