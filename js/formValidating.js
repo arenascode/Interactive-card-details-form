@@ -53,6 +53,7 @@ function validateForm() {
     }
     if (inputs[4].value !== "" && inputs[4].value.length < 3) {
       errorInputs[3].innerText = `Wrong Format, must be 3 numbers`;
+      inputs[4].style.borderColor = "#ff5252";
     }
     if (errorInputs[0].innerText === '' && errorInputs[1].innerText === '' && errorInputs[2].innerText === '' && errorInputs[3].innerText === '') {
       showFinalMessage()

@@ -1,4 +1,4 @@
-import { validateForm } from "./test.js"
+import { validateForm } from "./formValidating.js"
 // Variables 
 const cvcCard = document.getElementById('cvcContent')
 const frontCardNumber = document.getElementById('frontCardNumber')
