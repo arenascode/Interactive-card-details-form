@@ -19,10 +19,10 @@ $letter-spacing-input: 1px;
     --secondary-drakGrayish-Violent: hsl(279, 6%, 55%);
     --secondary-veryDark-Violent: hsl(278, 68%, 11%);
 }
-// style for card Details
-// .container {
-//   width: 375px;
-// }
+.container {
+  display: grid;
+  place-content: center;
+}
 .cardDetails {
   background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
