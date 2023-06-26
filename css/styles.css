@@ -25,10 +25,11 @@ body {
   --secondary-veryDark-Violent: hsl(278, 68%, 11%); }
 
 .container {
-  display: grid;
-  place-content: center; }
+  display: grid; }
 
 .cardDetails {
+  display: grid;
+  place-content: center;
   background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +93,9 @@ body {
       display: flex; }
 
 .formDetails {
-  margin-top: 100px; }
+  margin-top: 100px;
+  display: grid;
+  place-content: center; }
   .formDetails form {
     font-size: 10px;
     font-weight: 600;

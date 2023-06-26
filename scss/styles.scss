@@ -21,9 +21,10 @@ $letter-spacing-input: 1px;
 }
 .container {
   display: grid;
-  place-content: center;
 }
 .cardDetails {
+  display: grid;
+  place-content: center;
   background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +104,8 @@ $letter-spacing-input: 1px;
 
 .formDetails {
   margin-top: 100px;
-
+  display: grid;
+  place-content: center;
   form {
     font-size: $font-size-tittle-input;
     font-weight: $font-weight;
@@ -238,12 +240,11 @@ $letter-spacing-input: 1px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px){
   .container {
     display: flex;
     row-gap: 20px;
-
-    .cardDetails {
+  .cardDetails {
   background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
